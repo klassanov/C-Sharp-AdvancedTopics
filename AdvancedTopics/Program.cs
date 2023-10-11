@@ -11,7 +11,10 @@
             //IntegralTypeChecked();
             //FloatingPointDivisionByZero();
             //FloatingPointNaN();
-            FloatingPointIssues();
+            //FloatingPointIssues();
+
+            //Events
+            EventsReflectionDemo();
 
             Console.ReadKey();
         }
@@ -96,6 +99,24 @@
             {
                 Console.WriteLine("Are equal");
             }
+        }
+
+        static void EventsReflectionDemo()
+        {
+            //Subscribe to the event by using reflection
+            var demo = new EventsReflectionDemo();
+            var eventInfo = typeof(EventsReflectionDemo).GetEvent("MyEvent");
+
+            //2 possible approaches
+            //var handler = typeof(EventsReflectionDemo).GetMethod("Handler");
+            var handlerMethodInfo = demo.GetType().GetMethod("Handler");
+            var handler = Delegate.CreateDelegate(
+                eventInfo!.EventHandlerType!,
+                null,
+                handlerMethodInfo!);
+
+            eventInfo.AddEventHandler(demo, handler);
+            demo.RaiseEvent(123);
         }
     }
 }
