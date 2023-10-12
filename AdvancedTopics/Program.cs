@@ -14,9 +14,12 @@
             //FloatingPointIssues();
 
             //Events
-            EventsReflectionDemo();
+            //EventsReflectionDemo();
 
-            Console.ReadKey();
+            //Attributes
+            AttributeReflectionDemo();
+
+            //Console.ReadKey();
         }
 
         static void IntegralTypesOverflow()
@@ -117,6 +120,19 @@
 
             eventInfo.AddEventHandler(demo, handler);
             demo.RaiseEvent(123);
+        }
+
+        static void AttributeReflectionDemo()
+        {
+            var sm = typeof(AttributesReflectionDemo).GetMethod("SomeMethod");
+            foreach (var attr in sm.GetCustomAttributes(true))
+            {
+                Console.WriteLine($"Found attibute of type {attr.GetType().Name}");
+                if(attr is RepeatAttribute ra)
+                {
+                    Console.WriteLine($"We need to repeat this {ra.Times} times");
+                }
+            } 
         }
     }
 }
