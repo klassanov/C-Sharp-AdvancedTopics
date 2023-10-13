@@ -17,7 +17,9 @@
             //EventsReflectionDemo();
 
             //Attributes
-            AttributeReflectionDemo();
+            //AttributeReflectionDemo();
+
+            DynamicsDemo();
 
             //Console.ReadKey();
         }
@@ -133,6 +135,13 @@
                     Console.WriteLine($"We need to repeat this {ra.Times} times");
                 }
             } 
+        }
+
+        static void DynamicsDemo()
+        {
+            var demo = new DynamicsDemo();
+            //demo.Demo();
+            demo.Demo2();
         }
     }
 }
