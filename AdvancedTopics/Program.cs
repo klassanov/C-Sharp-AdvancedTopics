@@ -19,7 +19,8 @@
             //Attributes
             //AttributeReflectionDemo();
 
-            DynamicsDemo();
+            //DynamicsDemo();
+            DynamicXMLDemo();
 
             //Console.ReadKey();
         }
@@ -142,6 +143,12 @@
             var demo = new DynamicsDemo();
             //demo.Demo();
             demo.Demo2();
+        }
+
+        static void DynamicXMLDemo()
+        {
+            var demo = new DynamicXMLParsing();
+            demo.Test();
         }
     }
 }
