@@ -1,4 +1,6 @@
-﻿namespace AdvancedTopics
+﻿using AdvancedTopics.Dynamic;
+
+namespace AdvancedTopics
 {
     internal class Program
     {
@@ -20,7 +22,8 @@
             //AttributeReflectionDemo();
 
             //DynamicsDemo();
-            DynamicXMLDemo();
+            //DynamicXMLDemo();
+            ExpandoObjectDemo();
 
             //Console.ReadKey();
         }
@@ -148,6 +151,12 @@
         static void DynamicXMLDemo()
         {
             var demo = new DynamicXMLParsing();
+            demo.Test();
+        }
+
+        static void ExpandoObjectDemo()
+        {
+            var demo = new ExpandoObjectDemo();
             demo.Test();
         }
     }
