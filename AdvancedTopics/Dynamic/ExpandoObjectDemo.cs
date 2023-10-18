@@ -13,6 +13,10 @@ namespace AdvancedTopics.Dynamic
     {
         public void Test()
         {
+            //U can use Developer Command Prompt > csi.exe
+            //Alternatively C# Interactive window where U have Intellisense
+
+
             dynamic person = new ExpandoObject();
 
             //Properties
