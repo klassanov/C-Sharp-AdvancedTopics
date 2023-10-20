@@ -23,9 +23,10 @@ namespace AdvancedTopics
 
             //DynamicsDemo();
             //DynamicXMLDemo();
-            ExpandoObjectDemo();
+            //ExpandoObjectDemo();
 
             //Console.ReadKey();
+            RecursiveVisitorDemo.Demo();
         }
 
         static void IntegralTypesOverflow()
@@ -159,5 +160,9 @@ namespace AdvancedTopics
             var demo = new ExpandoObjectDemo();
             demo.Test();
         }
+
+       
+       
+       
     }
 }
