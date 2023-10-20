@@ -1,4 +1,6 @@
 ﻿using AdvancedTopics.Dynamic;
+using AdvancedTopics.Dynamic.ClassicVisitor;
+using AdvancedTopics.Dynamic.DynamicVisitor;
 
 namespace AdvancedTopics
 {
@@ -25,8 +27,10 @@ namespace AdvancedTopics
             //DynamicXMLDemo();
             //ExpandoObjectDemo();
 
-            //Console.ReadKey();
-            RecursiveVisitorDemo.Demo();
+
+            //ClassicRecursiveVisitorDemo.Demo();
+
+            DynamicRecursiveVisitorDemo.Demo();
         }
 
         static void IntegralTypesOverflow()

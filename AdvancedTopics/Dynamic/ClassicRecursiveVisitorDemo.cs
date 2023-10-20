@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvancedTopics.Dynamic
+namespace AdvancedTopics.Dynamic.ClassicVisitor
 {
-    public class RecursiveVisitorDemo
+    public class ClassicRecursiveVisitorDemo
     {
         public static void Demo()
         {
