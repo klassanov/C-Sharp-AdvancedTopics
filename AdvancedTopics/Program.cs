@@ -1,6 +1,7 @@
 ﻿using AdvancedTopics.Dynamic;
 using AdvancedTopics.Dynamic.ClassicVisitor;
 using AdvancedTopics.Dynamic.DynamicVisitor;
+using AdvancedTopics.ExtensionMethods;
 
 namespace AdvancedTopics
 {
@@ -30,7 +31,8 @@ namespace AdvancedTopics
 
             //ClassicRecursiveVisitorDemo.Demo();
 
-            DynamicRecursiveVisitorDemo.Demo();
+            //DynamicRecursiveVisitorDemo.Demo();
+            ExtensionMethodsDemo.Demo();
         }
 
         static void IntegralTypesOverflow()
@@ -72,7 +74,7 @@ namespace AdvancedTopics
         {
             double a = 5.0;
             double b = a / 0.0; //Positive infinity, no exception
-            double c = b*(-1) / 0.0; //Negarive infinity, no exception
+            double c = b * (-1) / 0.0; //Negarive infinity, no exception
             Console.WriteLine($"{b} {c}");
             //Available as constants
             //double.PositiveInfinity;
@@ -83,7 +85,7 @@ namespace AdvancedTopics
         {
             var positiveInfinity1 = 1.0f / 0.0;
             var positiveInfinity2 = 1.0f / 0.0;
-            var nan = positiveInfinity1/positiveInfinity2; //forma indeterminata
+            var nan = positiveInfinity1 / positiveInfinity2; //forma indeterminata
             Console.WriteLine(nan);
             var nan2 = 0.0 / 0.0; //forma indeterminata
             var x = double.PositiveInfinity / double.NegativeInfinity; //forma indeterminata
@@ -139,11 +141,11 @@ namespace AdvancedTopics
             foreach (var attr in sm.GetCustomAttributes(true))
             {
                 Console.WriteLine($"Found attibute of type {attr.GetType().Name}");
-                if(attr is RepeatAttribute ra)
+                if (attr is RepeatAttribute ra)
                 {
                     Console.WriteLine($"We need to repeat this {ra.Times} times");
                 }
-            } 
+            }
         }
 
         static void DynamicsDemo()
@@ -165,8 +167,8 @@ namespace AdvancedTopics
             demo.Test();
         }
 
-       
-       
-       
+
+
+
     }
 }
