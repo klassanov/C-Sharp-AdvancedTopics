@@ -56,7 +56,24 @@ namespace AdvancedTopics.ExtensionMethods
             //Extend Any type by extending generic type
             "hello".Example2();
 
+            //Extension Method Patterns
 
+            //1. Method Name shortener
+            var sb = new StringBuilder();
+            sb.al("Hello").al("How are U?");
+            Console.WriteLine(sb.ToString());
+
+            //2,3 -> no demo
+
+            //4. AddRange with params
+            var list = new List<int>();
+            list.AddRange(1,2,3,5);
+
+            //5. Antistatic, string format
+            var s = "Hello, {0}".f("Jonnie");
+
+            //6. Factory extension method
+            var notToday = 23.June(2020);
         }
     }
 }
