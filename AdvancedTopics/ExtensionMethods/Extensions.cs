@@ -15,7 +15,7 @@ namespace AdvancedTopics.ExtensionMethods
         * - reference types
         * - value types 
         * - interfaces
-        * - tuples
+        * - tuples, value tuples
         * - generics
         * - delegates
         * - any type: object or making the method generic
