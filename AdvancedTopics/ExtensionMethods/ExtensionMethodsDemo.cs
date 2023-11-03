@@ -74,6 +74,9 @@ namespace AdvancedTopics.ExtensionMethods
 
             //6. Factory extension method
             var notToday = 23.June(2020);
+
+            //Maybe monad
+            MaybeMonad.Demo();
         }
     }
 }
