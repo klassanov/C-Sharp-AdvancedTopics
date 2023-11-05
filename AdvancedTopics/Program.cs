@@ -2,6 +2,7 @@
 using AdvancedTopics.Dynamic.ClassicVisitor;
 using AdvancedTopics.Dynamic.DynamicVisitor;
 using AdvancedTopics.ExtensionMethods;
+using AdvancedTopics.MemoryManagement;
 
 namespace AdvancedTopics
 {
@@ -32,7 +33,9 @@ namespace AdvancedTopics
             //ClassicRecursiveVisitorDemo.Demo();
 
             //DynamicRecursiveVisitorDemo.Demo();
-            ExtensionMethodsDemo.Demo();
+            //ExtensionMethodsDemo.Demo();
+
+            new MemoryDemo().Demo();
         }
 
         static void IntegralTypesOverflow()
