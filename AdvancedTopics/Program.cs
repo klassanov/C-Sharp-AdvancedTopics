@@ -36,7 +36,8 @@ namespace AdvancedTopics
             //ExtensionMethodsDemo.Demo();
 
             //new MemoryDemo().Demo();
-            SpanDemo.Demo();
+            //SpanDemo.Demo();
+            MemoryManagersDemo.Demo();
         }
 
         static void IntegralTypesOverflow()
