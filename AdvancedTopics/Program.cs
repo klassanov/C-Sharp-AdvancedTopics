@@ -35,7 +35,8 @@ namespace AdvancedTopics
             //DynamicRecursiveVisitorDemo.Demo();
             //ExtensionMethodsDemo.Demo();
 
-            new MemoryDemo().Demo();
+            //new MemoryDemo().Demo();
+            SpanDemo.Demo();
         }
 
         static void IntegralTypesOverflow()
