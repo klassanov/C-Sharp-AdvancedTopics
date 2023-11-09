@@ -1,4 +1,5 @@
-﻿using AdvancedTopics.Dynamic;
+﻿using AdvancedTopics.Disposable;
+using AdvancedTopics.Dynamic;
 using AdvancedTopics.Dynamic.ClassicVisitor;
 using AdvancedTopics.Dynamic.DynamicVisitor;
 using AdvancedTopics.ExtensionMethods;
@@ -37,7 +38,9 @@ namespace AdvancedTopics
 
             //new MemoryDemo().Demo();
             //SpanDemo.Demo();
-            MemoryManagersDemo.Demo();
+            //MemoryManagersDemo.Demo();
+
+            DisposableDemo.Demo();
         }
 
         static void IntegralTypesOverflow()
