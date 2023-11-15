@@ -1,11 +1,5 @@
-﻿using AdvancedTopics.ContinuationPassingStyle;
-using AdvancedTopics.Disposable;
-using AdvancedTopics.DuckTyping;
-using AdvancedTopics.Dynamic;
-using AdvancedTopics.Dynamic.ClassicVisitor;
-using AdvancedTopics.Dynamic.DynamicVisitor;
-using AdvancedTopics.ExtensionMethods;
-using AdvancedTopics.MemoryManagement;
+﻿using AdvancedTopics.Dynamic;
+using AdvancedTopics.LocalInversionOfControl;
 
 namespace AdvancedTopics
 {
@@ -47,7 +41,9 @@ namespace AdvancedTopics
             //DuckTypingDemo.Demo();
             //MixingsDemo.Demo();
 
-            ContinuationPassingDemo.Demo();
+            //ContinuationPassingDemo.Demo();
+
+            LocalIoCDemo.Demo();
         }
 
         static void IntegralTypesOverflow()
